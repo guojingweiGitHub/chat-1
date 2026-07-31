@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+/* Custom styles */
+:root {
+  --primary-color: #409eff;
+  --success-color: #67c23a;
+  --warning-color: #e6a23c;
+  --danger-color: #f56c6c;
+  --info-color: #909399;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Responsive utilities */
+@media (max-width: 768px) {
+  .hidden-mobile {
+    display: none !important;
+  }
+  
+  .el-table {
+    font-size: 12px;
+  }
+  
+  .el-dialog {
+    width: 95% !important;
+    margin: 10px auto !important;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .hidden-tablet {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1025px) {
+  .hidden-desktop {
+    display: none !important;
+  }
+}
+
+/* Card list for mobile */
+.card-list {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .table-list {
+    display: none;
+  }
+  
+  .card-list {
+    display: block;
+  }
+}
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #dcdfe6;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
